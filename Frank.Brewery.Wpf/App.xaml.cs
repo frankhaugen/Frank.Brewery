@@ -1,4 +1,7 @@
 ﻿using Frank.Brewery.DataContexts;
+using Frank.Brewery.Repositories;
+using Frank.Brewery.Services;
+using Frank.Brewery.Wpf.Views;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -37,10 +40,13 @@ namespace Frank.Brewery.Wpf
         private void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient(typeof(MainWindow));
+            services.AddTransient<IYeastService, YeastService>();
+            services.AddTransient<IYeastRepository, YeastRepository>();
+
 
             services.AddDbContext<DataContext>(options =>
             {
-                options.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=FrankBrewery;Integrated Security=true;");
+                options.UseSqlServer("Server=.\\SQLEXPRESS;Database=FrankBrewery;Integrated Security=true;");
                 options.EnableDetailedErrors();
                 options.EnableSensitiveDataLogging();
             }, ServiceLifetime.Singleton);

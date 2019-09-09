@@ -5,8 +5,42 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Frank.Brewery.Wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        Title="Main Window" WindowStyle="ThreeDBorderWindow" ResizeMode="CanMinimize">
+	<StackPanel Height="512" MinWidth="1024">
+		<TabControl Name="MainTabMenu" Height="512">
+			<TabItem Header="Yeast">
+				<StackPanel>
+					<DataGrid ItemsSource="{Binding Yeasts}" />
+					<GroupBox Header="Add Yeast">
+						<StackPanel Orientation="Horizontal">
+							<StackPanel>
+								<Label Content="Name" Width="64" />
+								<TextBox  Width="64" />
+							</StackPanel>
+							<StackPanel>
+								<Label Content="Alpha" Width="64" />
+								<TextBox  Width="64" />
+							</StackPanel>
+							<StackPanel>
+								<Label Content="Alpha" Width="64" />
+								<TextBox  Width="64" />
+							</StackPanel>
+							<StackPanel>
+								<Label Content="Alpha" Width="64" />
+								<TextBox  Width="64" />
+							</StackPanel>
+							<StackPanel>
+								<Label Content="Alpha" Width="64" />
+								<TextBox  Width="64" />
+							</StackPanel>
+							<StackPanel>
+								<Label Content="Link" Width="64" />
+								<TextBox  Width="64" />
+							</StackPanel>
+						</StackPanel>
+					</GroupBox>
+				</StackPanel>
+			</TabItem>
+		</TabControl>
+	</StackPanel>
 </Window>
