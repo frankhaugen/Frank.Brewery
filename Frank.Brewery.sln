@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Frank.Brewery", "Frank.Brewery\Frank.Brewery.csproj", "{C6DA378F-216C-4303-96E2-6D07A9EA64D7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Frank.Brewery.Cli", "Frank.Brewery.Cli\Frank.Brewery.Cli.csproj", "{FD16B312-153D-4030-822D-CC4087E3C03A}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Frank.Brewery.Tests", "Frank.Brewery.Tests\Frank.Brewery.Tests.csproj", "{22EA98AA-224F-4E22-820E-B4186AEB1C29}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Frank.Brewery.Wpf", "Frank.Brewery.Wpf\Frank.Brewery.Wpf.csproj", "{87F0654E-BB84-4CB7-8607-241047B22773}"
@@ -33,18 +31,6 @@ Global
 		{C6DA378F-216C-4303-96E2-6D07A9EA64D7}.Release|x64.Build.0 = Release|Any CPU
 		{C6DA378F-216C-4303-96E2-6D07A9EA64D7}.Release|x86.ActiveCfg = Release|Any CPU
 		{C6DA378F-216C-4303-96E2-6D07A9EA64D7}.Release|x86.Build.0 = Release|Any CPU
-		{FD16B312-153D-4030-822D-CC4087E3C03A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FD16B312-153D-4030-822D-CC4087E3C03A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FD16B312-153D-4030-822D-CC4087E3C03A}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{FD16B312-153D-4030-822D-CC4087E3C03A}.Debug|x64.Build.0 = Debug|Any CPU
-		{FD16B312-153D-4030-822D-CC4087E3C03A}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{FD16B312-153D-4030-822D-CC4087E3C03A}.Debug|x86.Build.0 = Debug|Any CPU
-		{FD16B312-153D-4030-822D-CC4087E3C03A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FD16B312-153D-4030-822D-CC4087E3C03A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FD16B312-153D-4030-822D-CC4087E3C03A}.Release|x64.ActiveCfg = Release|Any CPU
-		{FD16B312-153D-4030-822D-CC4087E3C03A}.Release|x64.Build.0 = Release|Any CPU
-		{FD16B312-153D-4030-822D-CC4087E3C03A}.Release|x86.ActiveCfg = Release|Any CPU
-		{FD16B312-153D-4030-822D-CC4087E3C03A}.Release|x86.Build.0 = Release|Any CPU
 		{22EA98AA-224F-4E22-820E-B4186AEB1C29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{22EA98AA-224F-4E22-820E-B4186AEB1C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22EA98AA-224F-4E22-820E-B4186AEB1C29}.Debug|x64.ActiveCfg = Debug|Any CPU

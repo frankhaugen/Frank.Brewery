@@ -1,13 +1,15 @@
 ﻿using Frank.Brewery.DataContexts;
 using Frank.Brewery.Repositories;
 using Frank.Brewery.Services;
-using Frank.Brewery.Wpf.Views;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.IO;
 using System.Windows;
+using AutoMapper;
+using Frank.Brewery.AutoMapperProfiles;
+using Frank.Brewery.Wpf.AutoMapperProfiles;
 
 namespace Frank.Brewery.Wpf
 {
@@ -42,7 +44,9 @@ namespace Frank.Brewery.Wpf
             services.AddTransient(typeof(MainWindow));
             services.AddTransient<IYeastService, YeastService>();
             services.AddTransient<IYeastRepository, YeastRepository>();
+            services.AddTransient<IEnumService, EnumService>();
 
+            services.AddAutoMapper(typeof(EnumToDtoProfile), typeof(EnumDtoToDropdown));
 
             services.AddDbContext<DataContext>(options =>
             {

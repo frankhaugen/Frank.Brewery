@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Frank.Brewery.Wpf"
         mc:Ignorable="d"
-        Title="Main Window" WindowStyle="ThreeDBorderWindow" ResizeMode="CanMinimize">
+        Title="MainWindow" WindowStyle="ThreeDBorderWindow" ResizeMode="CanMinimize">
 	<StackPanel Height="512" MinWidth="1024">
 		<TabControl Name="MainTabMenu" Height="512">
 			<TabItem Header="Yeast">
@@ -40,6 +40,15 @@
 						</StackPanel>
 					</GroupBox>
 				</StackPanel>
+			</TabItem>
+			<TabItem Header="Experiments">
+				<WrapPanel>
+					<ComboBox Width="128" Margin="3,3,0,3" Name="AmountsDropdown"></ComboBox>
+					<ComboBox Width="128" Margin="3,3,0,3" Name="BeerCategoriesDropdown"></ComboBox>
+					<ComboBox Width="128" Margin="3,3,0,3" Name="BeerTypesDropdown"></ComboBox>
+					<ComboBox Width="128" Margin="3,3,0,3" Name="FermentableTypesDropdown"></ComboBox>
+					<Button  Width="128" Margin="3,3,0,3"  Name="ExperimentalButton" Click="ExperimentalButton_OnClick">Experimental Button</Button>
+				</WrapPanel>
 			</TabItem>
 		</TabControl>
 	</StackPanel>
