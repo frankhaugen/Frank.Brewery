@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Frank.Brewery.Entities;
 
@@ -9,6 +10,6 @@ namespace Frank.Brewery.Repositories
         Task<List<Yeast>> GetAll();
         Task<Yeast> Add(Yeast yeast);
         Task<Yeast> Update(Yeast yeast);
-        Task<Yeast> Remove(Yeast yeast);
+        Task<bool> Remove(Guid yeastId);
     }
 }

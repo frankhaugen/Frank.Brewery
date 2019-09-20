@@ -1,4 +1,5 @@
-﻿using Frank.Brewery.Entities;
+﻿using System;
+using Frank.Brewery.Entities;
 using Frank.Brewery.Repositories;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -29,9 +30,9 @@ namespace Frank.Brewery.Services
             return await _yeastRepository.Update(yeast);
         }
 
-        public async Task<Yeast> Remove(Yeast yeast)
+        public async Task<bool> Remove(Guid yeastId)
         {
-            return await _yeastRepository.Remove(yeast);
+            return await _yeastRepository.Remove(yeastId);
         }
     }
 }

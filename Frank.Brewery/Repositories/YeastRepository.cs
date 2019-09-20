@@ -1,7 +1,9 @@
-﻿using Frank.Brewery.DataContexts;
+﻿using System;
+using Frank.Brewery.DataContexts;
 using Frank.Brewery.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Frank.Brewery.Repositories
@@ -36,12 +38,13 @@ namespace Frank.Brewery.Repositories
             return entityEntry.Entity;
         }
 
-        public async Task<Yeast> Remove(Yeast yeast)
+        public async Task<bool> Remove(Guid yeastId)
         {
-            var entityEntry = _dataContext.Yeasts.Remove(yeast);
+            var yeast = await _dataContext.Yeasts.SingleAsync(y => y.Id == yeastId);
+            _dataContext.Yeasts.Remove(yeast);
             await _dataContext.SaveChangesAsync();
 
-            return entityEntry.Entity;
+            return true;
         }
     }
 }

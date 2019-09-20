@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Frank.Brewery.Tests", "Fran
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Frank.Brewery.Wpf", "Frank.Brewery.Wpf\Frank.Brewery.Wpf.csproj", "{87F0654E-BB84-4CB7-8607-241047B22773}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Frank.Brewery.Api", "Frank.Brewery.Api\Frank.Brewery.Api.csproj", "{7E6C6D77-730B-4896-99DF-0B637E909226}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,18 @@ Global
 		{87F0654E-BB84-4CB7-8607-241047B22773}.Release|x64.Build.0 = Release|Any CPU
 		{87F0654E-BB84-4CB7-8607-241047B22773}.Release|x86.ActiveCfg = Release|Any CPU
 		{87F0654E-BB84-4CB7-8607-241047B22773}.Release|x86.Build.0 = Release|Any CPU
+		{7E6C6D77-730B-4896-99DF-0B637E909226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E6C6D77-730B-4896-99DF-0B637E909226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E6C6D77-730B-4896-99DF-0B637E909226}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7E6C6D77-730B-4896-99DF-0B637E909226}.Debug|x64.Build.0 = Debug|Any CPU
+		{7E6C6D77-730B-4896-99DF-0B637E909226}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7E6C6D77-730B-4896-99DF-0B637E909226}.Debug|x86.Build.0 = Debug|Any CPU
+		{7E6C6D77-730B-4896-99DF-0B637E909226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E6C6D77-730B-4896-99DF-0B637E909226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E6C6D77-730B-4896-99DF-0B637E909226}.Release|x64.ActiveCfg = Release|Any CPU
+		{7E6C6D77-730B-4896-99DF-0B637E909226}.Release|x64.Build.0 = Release|Any CPU
+		{7E6C6D77-730B-4896-99DF-0B637E909226}.Release|x86.ActiveCfg = Release|Any CPU
+		{7E6C6D77-730B-4896-99DF-0B637E909226}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
