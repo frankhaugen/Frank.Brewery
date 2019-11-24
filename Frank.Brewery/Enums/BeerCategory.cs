@@ -1,6 +1,6 @@
 ﻿namespace Frank.Brewery.Enums
 {
-    public enum BeerCategory
+    public enum BrewCategory
     {
         Ale = 1,
         Cider = 2,

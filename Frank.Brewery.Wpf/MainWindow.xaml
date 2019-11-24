@@ -45,7 +45,7 @@
 				<WrapPanel>
 					<ComboBox Width="128" Margin="3,3,0,3" Name="AmountsDropdown"></ComboBox>
 					<ComboBox Width="128" Margin="3,3,0,3" Name="BeerCategoriesDropdown"></ComboBox>
-					<ComboBox Width="128" Margin="3,3,0,3" Name="BeerTypesDropdown"></ComboBox>
+					<ComboBox Width="128" Margin="3,3,0,3" Name="BrewTypesDropdown"></ComboBox>
 					<ComboBox Width="128" Margin="3,3,0,3" Name="FermentableTypesDropdown"></ComboBox>
 					<Button  Width="128" Margin="3,3,0,3"  Name="ExperimentalButton" Click="ExperimentalButton_OnClick">Experimental Button</Button>
 				</WrapPanel>

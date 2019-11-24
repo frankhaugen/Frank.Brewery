@@ -8,7 +8,7 @@ namespace Frank.Brewery.AutoMapperProfiles
     {
         public EnumToDtoProfile()
         {
-            CreateMap<BeerType, EnumDto>()
+            CreateMap<BrewType, EnumDto>()
                 .ForMember(dto => dto.Name, opt => opt.MapFrom(e => e.ToString()))
                 .ForMember(dto => dto.Value, opt => opt.MapFrom(e => e));
 
@@ -24,7 +24,7 @@ namespace Frank.Brewery.AutoMapperProfiles
                 .ForMember(dto => dto.Name, opt => opt.MapFrom(e => e.ToString()))
                 .ForMember(dto => dto.Value, opt => opt.MapFrom(e => e));
 
-            CreateMap<BeerCategory, EnumDto>()
+            CreateMap<BrewCategory, EnumDto>()
                 .ForMember(dto => dto.Name, opt => opt.MapFrom(e => e.ToString()))
                 .ForMember(dto => dto.Value, opt => opt.MapFrom(e => e));
 

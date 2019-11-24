@@ -162,7 +162,7 @@ namespace Frank.Brewery.Migrations
                     b.Property<int>("AlcoholTolerance")
                         .HasColumnType("int");
 
-                    b.Property<int>("BeerCategory")
+                    b.Property<int>("BrewCategory")
                         .HasColumnType("int");
 
                     b.Property<int>("Count")

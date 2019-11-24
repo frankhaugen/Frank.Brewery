@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Frank.Brewery.Api.Controllers
 {
-    public class RecipiesController
+    public class BrewController
     {
     }
 }

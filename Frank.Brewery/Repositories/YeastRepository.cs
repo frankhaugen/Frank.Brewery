@@ -38,7 +38,7 @@ namespace Frank.Brewery.Repositories
             return entityEntry.Entity;
         }
 
-        public async Task<bool> Remove(Guid yeastId)
+        public async Task<bool> Remove(int yeastId)
         {
             var yeast = await _dataContext.Yeasts.SingleAsync(y => y.Id == yeastId);
             _dataContext.Yeasts.Remove(yeast);

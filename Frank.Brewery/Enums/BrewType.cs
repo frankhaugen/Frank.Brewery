@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Frank.Brewery.Enums
+﻿namespace Frank.Brewery.Enums
 {
-    public enum BeerType
+    public enum BrewType
     {
+        Experimental = 0,
         APA = 1,
         Blonde = 2,
         DIPA = 3,
@@ -17,6 +14,8 @@ namespace Frank.Brewery.Enums
         Porter = 9,
         Stout = 10,
         Weissbier = 11,
-        Wit = 12
+        Wit = 12,
+        Pear = 13,
+        Apple = 14
     }
 }

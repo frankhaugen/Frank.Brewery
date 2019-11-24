@@ -5,7 +5,7 @@ namespace Frank.Brewery.Services
 {
     public interface IEnumService
     {
-        List<EnumDto> BeerTypes();
+        List<EnumDto> BrewTypes();
         List<EnumDto> BeerCategories();
         List<EnumDto> Amounts();
         List<EnumDto> FermentableTypes();

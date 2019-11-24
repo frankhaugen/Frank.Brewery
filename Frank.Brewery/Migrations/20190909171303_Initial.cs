@@ -49,7 +49,7 @@ namespace Frank.Brewery.Migrations
                     Link = table.Column<string>(nullable: true),
                     Price = table.Column<double>(nullable: false),
                     Count = table.Column<int>(nullable: false),
-                    BeerCategory = table.Column<int>(nullable: false),
+                    BrewCategory = table.Column<int>(nullable: false),
                     AlcoholTolerance = table.Column<int>(nullable: false),
                     Flocculation = table.Column<int>(nullable: false)
                 },

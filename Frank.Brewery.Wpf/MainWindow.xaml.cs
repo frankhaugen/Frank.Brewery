@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using Frank.Brewery.Repositories;
 
 namespace Frank.Brewery.Wpf
 {
@@ -16,23 +17,22 @@ namespace Frank.Brewery.Wpf
     /// </summary>
     public partial class MainWindow : Window
     {
-        private readonly IYeastService _yeastService;
         private readonly IEnumService _enumService;
+        private readonly IYeastRepository _yeastRepository;
         private readonly IMapper _mapper;
 
         public List<Yeast> Yeasts { get; set; }
         public Amount AlchoholTolerance { get; set; }
 
-        public MainWindow(IYeastService yeastService, IEnumService enumService, IMapper mapper)
+        public MainWindow(IEnumService enumService, IMapper mapper)
         {
-            _yeastService = yeastService;
             _enumService = enumService;
             _mapper = mapper;
             InitializeComponent();
             AmountsDropdown.ItemsSource = _mapper.Map<List<ComboBoxItem>>(_enumService.Amounts());
             FermentableTypesDropdown.ItemsSource = _mapper.Map<List<ComboBoxItem>>(_enumService.FermentableTypes());
             BeerCategoriesDropdown.ItemsSource = _mapper.Map<List<ComboBoxItem>>(_enumService.BeerCategories());
-            BeerTypesDropdown.ItemsSource = _mapper.Map<List<ComboBoxItem>>(_enumService.BeerTypes());
+            BrewTypesDropdown.ItemsSource = _mapper.Map<List<ComboBoxItem>>(_enumService.BrewTypes());
             //Yeasts = _yeastService.GetAll().Result;
 
         }
@@ -44,7 +44,7 @@ namespace Frank.Brewery.Wpf
                 _mapper.Map<EnumDto>(AmountsDropdown.SelectedItem),
                 _mapper.Map<EnumDto>(FermentableTypesDropdown.SelectedItem),
                 _mapper.Map<EnumDto>(BeerCategoriesDropdown.SelectedItem),
-                _mapper.Map<EnumDto>(BeerTypesDropdown.SelectedItem),
+                _mapper.Map<EnumDto>(BrewTypesDropdown.SelectedItem),
             };
             MessageBox.Show(JsonConvert.SerializeObject(list, Formatting.Indented));
 

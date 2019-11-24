@@ -42,7 +42,6 @@ namespace Frank.Brewery.Wpf
         private void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient(typeof(MainWindow));
-            services.AddTransient<IYeastService, YeastService>();
             services.AddTransient<IYeastRepository, YeastRepository>();
             services.AddTransient<IEnumService, EnumService>();
 

@@ -18,10 +18,10 @@ namespace Frank.Brewery.Api.Controllers
             _mapper = mapper;
         }
 
-        [HttpGet("/enums/beertypes")]
-        public async Task<IActionResult> GetBeerTypes()
+        [HttpGet("/enums/BrewTypes")]
+        public async Task<IActionResult> GetBrewTypes()
         {
-            var codes = Enum.GetValues(typeof(BeerType)).Cast<BeerType>();
+            var codes = Enum.GetValues(typeof(BrewType)).Cast<BrewType>();
 
             var response = _mapper.Map<List<EnumDto>>(codes);
 
@@ -31,7 +31,7 @@ namespace Frank.Brewery.Api.Controllers
         [HttpGet("/enums/beercategories")]
         public async Task<IActionResult> GetBeerCategories()
         {
-            var codes = Enum.GetValues(typeof(BeerCategory)).Cast<BeerCategory>();
+            var codes = Enum.GetValues(typeof(BrewCategory)).Cast<BrewCategory>();
 
             var response = _mapper.Map<List<EnumDto>>(codes);
 

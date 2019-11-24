@@ -16,16 +16,16 @@ namespace Frank.Brewery.Services
             _mapper = mapper;
         }
 
-        public List<EnumDto> BeerTypes()
+        public List<EnumDto> BrewTypes()
         {
-            var beerTypes = Enum.GetValues(typeof(BeerType)).Cast<BeerType>();
+            var BrewTypes = Enum.GetValues(typeof(BrewType)).Cast<BrewType>();
 
-            return _mapper.Map<List<EnumDto>>(beerTypes);
+            return _mapper.Map<List<EnumDto>>(BrewTypes);
         }
 
         public List<EnumDto> BeerCategories()
         {
-            var beerCategories = Enum.GetValues(typeof(BeerCategory)).Cast<BeerCategory>();
+            var beerCategories = Enum.GetValues(typeof(BrewCategory)).Cast<BrewCategory>();
 
             return _mapper.Map<List<EnumDto>>(beerCategories);
         }

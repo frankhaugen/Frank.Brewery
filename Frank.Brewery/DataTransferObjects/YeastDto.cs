@@ -9,7 +9,7 @@ namespace Frank.Brewery.DataTransferObjects
         public Uri Link { get; set; }
         public double Price { get; set; }
         public int Count { get; set; }
-        public BeerCategory BeerCategory { get; set; }
+        public BrewCategory BrewCategory { get; set; }
         public Amount AlcoholTolerance { get; set; }
         public Amount Flocculation { get; set; }
     }

@@ -10,6 +10,6 @@ namespace Frank.Brewery.Repositories
         Task<List<Yeast>> GetAll();
         Task<Yeast> Add(Yeast yeast);
         Task<Yeast> Update(Yeast yeast);
-        Task<bool> Remove(Guid yeastId);
+        Task<bool> Remove(int yeastId);
     }
 }

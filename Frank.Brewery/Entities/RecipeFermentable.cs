@@ -4,7 +4,7 @@ namespace Frank.Brewery.Entities
 {
     public class RecipeFermentable
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         public Guid RecipeId { get; set; }
         public Recipe Recipe { get; set; }
