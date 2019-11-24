@@ -67,6 +67,8 @@ namespace Frank.Brewery.DataContexts
                 .HasForeignKey(rh => rh.HopId)
                 .OnDelete(DeleteBehavior.Restrict);
             
+
+
         }
     }
 }

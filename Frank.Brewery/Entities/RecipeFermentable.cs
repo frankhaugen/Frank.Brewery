@@ -6,9 +6,9 @@ namespace Frank.Brewery.Entities
     {
         public int Id { get; set; }
 
-        public Guid RecipeId { get; set; }
+        public int RecipeId { get; set; }
         public Recipe Recipe { get; set; }
-        public Guid FermentableId { get; set; }
+        public int FermentableId { get; set; }
         public Fermentable Fermentable { get; set; }
     }
 }

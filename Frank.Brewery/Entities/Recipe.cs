@@ -12,13 +12,13 @@ namespace Frank.Brewery.Entities
         public int BoilTime { get; set; }
         public int BatchSize { get; set; }
 
-        public IList<RecipeFermentable> RecipeFermentables { get; set; }
-        public IList<RecipeHop> RecipeHops { get; set; }
+        public IList<RecipeFermentable>? RecipeFermentables { get; set; }
+        public IList<RecipeHop>? RecipeHops { get; set; }
 
 
-        public Guid? YeastId { get; set; }
+        public int? YeastId { get; set; }
         public Yeast? Yeast { get; set; }
-        public int YeastAmount { get; set; }
+        public int? YeastAmount { get; set; }
 
         public IList<Step> Steps { get; set; }
     }
