@@ -1,5 +1,4 @@
 ﻿using Frank.Brewery.Enums;
-using System;
 using System.Collections.Generic;
 
 namespace Frank.Brewery.Entities
@@ -8,8 +7,8 @@ namespace Frank.Brewery.Entities
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public Uri Link { get; set; }
-        public double Price { get; set; }
+        public string? Link { get; set; }
+        public double? Price { get; set; }
         public int Count { get; set; }
         public BrewCategory BrewCategory { get; set; }
         public Amount AlcoholTolerance { get; set; }

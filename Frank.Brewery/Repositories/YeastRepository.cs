@@ -22,6 +22,11 @@ namespace Frank.Brewery.Repositories
             return await _dataContext.Yeasts.ToListAsync();
         }
 
+        public async Task<Yeast> Get(int id)
+        {
+            return await _dataContext.Yeasts.SingleOrDefaultAsync(y => y.Id == id);
+        }
+
         public async Task<Yeast> Add(Yeast yeast)
         {
             var entityEntry = await _dataContext.Yeasts.AddAsync(yeast);
