@@ -26,5 +26,12 @@ namespace Frank.Brewery.Repositories
         {
             throw new NotImplementedException();
         }
+
+        public async Task<Recipe> Insert(Recipe recipe)
+        {
+            var entry = await _dataContext.Recipes.AddAsync(recipe);
+            await _dataContext.SaveChangesAsync();
+            return entry.Entity;
+        }
     }
 }

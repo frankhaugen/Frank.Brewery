@@ -8,6 +8,11 @@
         Title="MainWindow" WindowStyle="ThreeDBorderWindow" ResizeMode="CanMinimize">
 	<StackPanel Height="512" MinWidth="1024">
 		<TabControl Name="MainTabMenu" Height="512">
+			<TabItem Header="Recipes">
+				<StackPanel>
+					<DataGrid Name="RecipesGrid" />
+				</StackPanel>
+			</TabItem>
 			<TabItem Header="Yeast">
 				<StackPanel>
 					<DataGrid ItemsSource="{Binding Yeasts}" />
