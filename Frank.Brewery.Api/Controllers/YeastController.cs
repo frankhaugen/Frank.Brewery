@@ -26,7 +26,9 @@ namespace Frank.Brewery.Api.Controllers
         public async Task<IActionResult> Get()
         {
             var yeasts = await _yeastRepository.GetAll();
-            return Ok(yeasts);
+
+            var response = _mapper.Map<IEnumerable<YeastDto>>(yeasts);
+            return Ok(response);
         }
 
         [HttpPost("/yeasts")]

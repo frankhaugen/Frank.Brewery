@@ -14,12 +14,11 @@ using System.Windows.Shapes;
 namespace Frank.Brewery.Wpf.Pages
 {
     /// <summary>
-    /// Interaction logic for ReceipePage.xaml
+    /// Interaction logic for FermentablePage.xaml
     /// </summary>
-    public partial class ReceipePage : Page
+    public partial class FermentablePage : Page
     {
-        
-        public ReceipePage()
+        public FermentablePage()
         {
             InitializeComponent();
         }
