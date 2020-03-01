@@ -6,10 +6,10 @@
         {
             if (powerOf < 1) return 0.0m;
             if (powerOf == 1) return value;
-            
+
             var result = value;
 
-            for (int i = 1; i < powerOf; i++)
+            for (var i = 1; i < powerOf; i++)
             {
                 result *= value;
             }
