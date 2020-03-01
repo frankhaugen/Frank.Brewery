@@ -1,14 +1,14 @@
-using Frank.Brewery.DataContexts;
-using Frank.Brewery.Entities;
-using Frank.Brewery.Repositories;
-using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoFixture;
 using FluentAssertions;
+using Frank.Brewery.DataContexts;
+using Frank.Brewery.Entities;
+using Frank.Brewery.Repositories;
+using Microsoft.EntityFrameworkCore;
 using Xunit;
 
-namespace Frank.Brewery.Tests.Repositories
+namespace Frank.Brewery.Tests.Unit.Repositories
 {
     public class YeastRepositoryTests
     {

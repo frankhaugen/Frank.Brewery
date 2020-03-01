@@ -1,11 +1,10 @@
+using System.Threading.Tasks;
 using BeerMath;
 using FluentAssertions;
 using Frank.Brewery.Services;
-using System.Threading.Tasks;
 using Xunit;
-using Xunit.Abstractions;
 
-namespace Frank.Brewery.Tests.Services
+namespace Frank.Brewery.Tests.Unit.Services
 {
     public class GravityServiceTests
     {

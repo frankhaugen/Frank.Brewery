@@ -2,7 +2,7 @@
 using Frank.Brewery.Extensions;
 using Xunit;
 
-namespace Frank.Brewery.Tests.Extensions
+namespace Frank.Brewery.Tests.Unit.Extensions
 {
     public class StringExtensionsTests
     {
