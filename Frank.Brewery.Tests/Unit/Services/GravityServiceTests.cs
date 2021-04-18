@@ -1,7 +1,7 @@
-using System.Threading.Tasks;
-using BeerMath;
+﻿using BeerMath;
 using FluentAssertions;
 using Frank.Brewery.Services;
+using System.Threading.Tasks;
 using Xunit;
 
 namespace Frank.Brewery.Tests.Unit.Services
