@@ -1,0 +1,12 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Frank.Brewery.Api/Frank.Brewery.Api.csproj" />
+  <Project Path="Frank.Brewery.Client/Frank.Brewery.Client.csproj" />
+  <Project Path="Frank.Brewery.Tests/Frank.Brewery.Tests.csproj" />
+  <Project Path="Frank.Brewery.Wpf/Frank.Brewery.Wpf.csproj" />
+  <Project Path="Frank.Brewery/Frank.Brewery.csproj" />
+</Solution>
